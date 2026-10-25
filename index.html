@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi — Moderní stomatologie s láskou</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lumi: {
+                            50: '#fff5f5',
+                            100: '#ffe3e3',
+                            200: '#ffc9c9',
+                            300: '#ffa3a3',
+                            400: '#e87984',
+                            500: '#d15b67',
+                            600: '#b8424e',
+                            700: '#96333e',
+                            800: '#7a2d36',
+                            900: '#662a31',
+                        },
+                        blush: '#fcf8f8',
+                        charcoal: '#2c2626'
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </head>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-blush text-charcoal font-sans antialiased selection:bg-lumi-200 selection:text-lumi-900">
+
+    <!-- Navigace -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-lumi-100/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl tracking-wide text-lumi-800 font-semibold flex items-center gap-2">
+                <span>Lumi</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-lumi-400"></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-charcoal/80">
+                <a href="#o-nas" class="hover:text-lumi-600 transition-colors">O nás</a>
+                <a href="#sluzby" class="hover:text-lumi-600 transition-colors">Služby</a>
+                <a href="#filozofie" class="hover:text-lumi-600 transition-colors">Filozofie</a>
+                <a href="#kontakt" class="hover:text-lumi-600 transition-colors">Kontakt</a>
+            </nav>
+
+            <a href="#kontakt" class="bg-lumi-500 hover:bg-lumi-600 text-white px-6 py-3 rounded-full text-sm font-medium tracking-wide shadow-sm hover:shadow transition-all transform hover:-translate-y-0.5">
+                Rezervovat termín
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero sekce -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <!-- Dekorativní jemné pozadí -->
+        <div class="absolute top-1/4 right-[-10%] w-[500px] h-[500px] rounded-full bg-lumi-100/50 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-[-5%] w-[400px] h-[400px] rounded-full bg-lumi-200/30 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-8">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-lumi-100 text-lumi-800 text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-lumi-500"></span>
+                    Stomatologie s lidským dotekem
+                </span>
+                
+                <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.1] text-charcoal font-normal">
+                    Úsměv, který v sobě nese <span class="italic text-lumi-600 font-light">krása a srdce</span>.
+                </h1>
+                
+                <p class="text-lg text-charcoal/70 max-w-xl font-light leading-relaxed">
+                    Věříme, že návštěva zubaře může být klidný a příjemný zážitek. Spojujeme špičkovou moderní medicínu, estetiku a maximální jemnost pro váš přirozený úsměv.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                    <a href="#kontakt" class="bg-lumi-500 hover:bg-lumi-600 text-white text-center px-8 py-4 rounded-full font-medium tracking-wide shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Domluvit konzultaci
+                    </a>
+                    <a href="#sluzby" class="border border-lumi-300 hover:border-lumi-400 text-charcoal text-center px-8 py-4 rounded-full font-medium tracking-wide transition-colors">
+                        Prozkoumat péči
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vizuální karta / Ilustrace -->
+            <div class="lg:col-span-5">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-lumi-200 to-lumi-100 rounded-[2.5rem] transform rotate-2 filter blur-sm opacity-70"></div>
+                    <div class="relative bg-white/90 p-8 sm:p-10 rounded-[2rem] shadow-xl border border-lumi-100 space-y-6">
+                        <div class="w-12 h-12 rounded-2xl bg-lumi-100 flex items-center justify-center text-lumi-600 text-xl font-serif">
+                            L
+                        </div>
+                        <h3 class="font-serif text-2xl text-charcoal">Individuální péče bez strachu</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                            Každý pacient je pro nás jedinečný příběh. Nasloucháme vašim přáním a staráme se o vás v klidném prostředí bez stresu a bzučení vrtaček, které by vás znepokojovalo.
+                        </p>
+                        <div class="pt-4 border-t border-lumi-50 flex items-center justify-between text-xs text-charcoal/60 tracking-wider uppercase font-medium">
+                            <span>Bezbolestně</span>
+                            <span>Esteticky</span>
+                            <span>S láskou</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O nás / Filozofie -->
+    <section id="filozofie" class="py-24 bg-white/60 border-y border-lumi-100/60">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-8">
+            <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">Naše srdcová záležitost</h2>
+            <p class="text-lg text-charcoal/70 font-light max-w-2xl mx-auto leading-relaxed">
+                Založili jsme Lumi s vizí, že klinika může vypadat jako butikový salon, kde se mísí nejmodernější technologie s hřejivým lidským přístupem. Naším cílem je, abyste odcházeli s pocitem sebedůvěry a radosti.
+            </p>
+        </div>
+    </section>
+
+    <!-- Služby -->
+    <section id="sluzby" class="py-28">
+        <div class="max-w-7xl mx-auto px-6 space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-xs font-semibold uppercase tracking-widest text-lumi-600">Co pro vás děláme</span>
+                <h2 class="font-serif text-4xl text-charcoal">Komplexní péče s důrazem na detail</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Služba 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-lumi-100/80 space-y-4 group">
+                    <div class="w-12 h-12 rounded-2xl bg-lumi-50 flex items-center justify-center text-lumi-600 group-hover:bg-lumi-500 group-hover:text-white transition-colors">
+                        ✨
+                    </div>
+                    <h3 class="font-serif text-xl text-charcoal">Estetická stomatologie</h3>
+                    <p class="text-sm text-charcoal/70 font-light leading-relaxed">
+                        Bělení zubů, fazety a citlivé estetické úpravy, které podtrhnou přirozenou krásu vašeho obličeje.
+                    </p>
+                </div>
+
+                <!-- Služba 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-lumi-100/80 space-y-4 group">
+                    <div class="w-12 h-12 rounded-2xl bg-lumi-50 flex items-center justify-center text-lumi-600 group-hover:bg-lumi-500 group-hover:text-white transition-colors">
+                        🤍
+                    </div>
+                    <h3 class="font-serif text-xl text-charcoal">Preventivní péče & hygiena</h3>
+                    <p class="text-sm text-charcoal/70 font-light leading-relaxed">
+                        Důkladné dentální hygieny a preventivní prohlídky pro dlouhodobé zdraví vašich dásní i zubů.
+                    </p>
+                </div>
+
+                <!-- Služba 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-all border border-lumi-100/80 space-y-4 group">
+                    <div class="w-12 h-12 rounded-2xl bg-lumi-50 flex items-center justify-center text-lumi-600 group-hover:bg-lumi-500 group-hover:text-white transition-colors">
+                        🌸
+                    </div>
+                    <h3 class="font-serif text-xl text-charcoal">Bezbolestná léčba</h3>
+                    <p class="text-sm text-charcoal/70 font-light leading-relaxed">
+                        Moderní postupy, šetrné materiály a maximální empatie pro ty, kteří mají z ošetření obavy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt a Rezervace -->
+    <section id="kontakt" class="py-28 bg-white/80 border-t border-lumi-100/60">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-semibold uppercase tracking-widest text-lumi-600">Spojte se s námi</span>
+                <h2 class="font-serif text-4xl text-charcoal">Začněte svou cestu k novému úsměvu</h2>
+                <p class="text-charcoal/70 font-light leading-relaxed">
+                    Napište nám nebo zavolejte. Rádi vám zodpovíme veškeré dotazy a najdeme termín, který vám bude dokonale vyhovovat.
+                </p>
+                
+                <div class="space-y-3 pt-2 text-sm text-charcoal/80 font-light">
+                    <p>📍 Pařížská 12, Praha 1</p>
+                    <p>📞 +420 123 456 789</p>
+                    <p>✉️ ahoj@lumiklinika.cz</p>
+                </div>
+            </div>
+
+            <!-- Kontaktní formulář -->
+            <div class="bg-blush p-8 sm:p-10 rounded-3xl border border-lumi-100 space-y-6">
+                <h3 class="font-serif text-2xl text-charcoal">Rychlá rezervace</h3>
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Děkujeme! Váš vzkaz byl odeslán, brzy se vám ozveme.');">
+                    <div>
+                        <label class="block text-xs font-medium text-charcoal/70 uppercase tracking-wider mb-2">Vaše jméno</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl bg-white border border-lumi-200 focus:outline-none focus:border-lumi-500 text-sm transition-colors" placeholder="Anna Nováková">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-charcoal/70 uppercase tracking-wider mb-2">Telefonní číslo</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-xl bg-white border border-lumi-200 focus:outline-none focus:border-lumi-500 text-sm transition-colors" placeholder="+420 601 234 567">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-charcoal/70 uppercase tracking-wider mb-2">Poznámka či přání</label>
+                        <textarea rows="3" class="w-full px-4 py-3 rounded-xl bg-white border border-lumi-200 focus:outline-none focus:border-lumi-500 text-sm transition-colors" placeholder="Mám zájem o preventivní prohlídku..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-lumi-500 hover:bg-lumi-600 text-white font-medium py-3.5 rounded-xl shadow-sm transition-all tracking-wide text-sm">
+                        Odeslat poptávku
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-lumi-100 bg-white/40 text-center text-xs text-charcoal/60">
+        <p>© 2026 Lumi Stomatologická klinika. Všechna práva vyhrazena.</p>
+    </footer>
